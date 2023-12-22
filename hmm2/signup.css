@@ -1,0 +1,164 @@
+:root{
+  --pink:#e84393;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration:none;
+  text-transform: capitalize;
+  transition: .2s linear;
+
+}
+html{
+  font-size: 65%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  overflow-x: hidden;
+}
+section{
+  padding: 4rem 10%;
+}
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  color: #333;
+  padding: 1rem;
+  margin: 2rem 0;
+  background: rgba(255,51,153,.05);
+}
+.heading span{
+  color:var(--pink);
+}
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: #333;
+  color: #fff;
+  padding: .9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+
+}
+.btn:hover{
+  background:var(--pink) ;
+}
+
+  header{
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    background: #fff;
+    padding: 2rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+header .logo span{
+    color:var(--pink);
+}
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+header .navbar a:hover{
+    color:var(--pink);
+}
+header .icons a{
+    font-size: 3rem;
+    color: #333;
+    margin-left: 2rem;
+}
+header #toggler{
+    display: none;
+}
+ header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    cursor: pointer;
+    border: 1rem solid rgba(0,0,0,.3);
+    display: none;
+ }
+  
+  
+  
+  /* Create three columns of equal width */
+  .columns {
+    margin-top: 10rem;
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+  
+  }
+  
+  /* Style the list */
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+   
+  }
+  
+  /* Add shadows on hover */
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  /* Pricing header */
+  .price .header {
+    background-color: rgb(163,145,147);
+    color: white;
+    font-size: 25px;
+  }
+  
+  /* List items */
+  .price li {
+    border-bottom: 1px solid rgb(246,224,181);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Grey list item */
+  .price .grey {
+    background-color: #eee;
+    
+    font-size: 20px;
+  }
+  
+  /* The "Sign Up" button */
+  .button {
+    background-color: rgb(170,111,115);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Change the width of the three columns to 100%
+  (to stack horizontally on small screens) */
+  @media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+      
+    }
+  }

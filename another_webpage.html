@@ -1,0 +1,92 @@
+<!-- second_website.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Second Website - Cart</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+
+      #cart {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cart">
+      <h2>Shopping Cart</h2>
+      <img src="fpot66.avif" alt="" added to cart />
+      <p>added to cart</p>
+      <img src="fpot88.avif" alt="" />
+
+      <ul id="cart-items"></ul>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cartItemsElement = document.getElementById("cart-items");
+
+        // Listen for messages from the main website
+        window.addEventListener("message", function (event) {
+          if (event.data && event.data.type === "cart-update") {
+            // Update the cart with the received data
+            const receivedCart = event.data.data;
+            updateCartUI(receivedCart);
+          }
+        });
+
+        // Function to update the cart UI
+        function updateCartUI(cart) {
+          // Update the cart items in the UI (you can render it however you like)
+          cartItemsElement.innerHTML = "";
+          cart.forEach((item) => {
+            const listItem = document.createElement("li");
+            listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+            cartItemsElement.appendChild(listItem);
+          });
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const cartItemsElement = document.getElementById("cart-items");
+
+        // Load the existing cart data from the server (localStorage in this case)
+        const cartDataFromServer = localStorage.getItem("cart");
+        const cart = cartDataFromServer ? JSON.parse(cartDataFromServer) : [];
+        updateCartUI();
+
+        // Function to update the cart UI
+        function updateCartUI() {
+          // Update the cart items in the UI (you can render it however you like)
+          cartItemsElement.innerHTML = "";
+          cart.forEach((item) => {
+            const listItem = document.createElement("li");
+            listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+            cartItemsElement.appendChild(listItem);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

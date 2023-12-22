@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSWih3RivdR4BPV5Fe05La3Uhj8-Okrjj1XA&usqp=CAU"
+    />
+    <title>Flower</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="eg.css" />
+  </head>
+  <body>
+    <script src="eg.js"></script>
+    <!-- header begins-->
+    <header>
+      <input type="checkbox" name="" id="toggler" />
+      <label for="toggler" class="fas fa-bars"></label>
+      <a href="#" class="logo">flower<span>.</span></a>
+      <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="#about">about</a>
+        <a href="#products">products</a>
+        <a href="#review">reviews</a>
+        <a href="#contact">contact</a>
+      </nav>
+      <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="signup.html" class="fas fa-user"></a>
+      </div>
+    </header>
+    <!--header ends-->
+    <!--home section begins-->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>fresh flowers</h3>
+        <span>natural and beautiful flowers</span>
+        <p>
+          Flowers: Where beauty blooms! Explore our vast collection of fresh,
+          exquisite blooms, crafted with care and delivered with love.
+        </p>
+        <a href="#products" class="btn">shop now</a>
+      </div>
+    </section>
+    <!--home section ends here-->
+    <!--about section starts-->
+    <section class="about" id="about">
+      <h1 class="heading"><span> about </span> us</h1>
+      <div class="row">
+        <div class="video-container">
+          <video src="florist.mp4" loop autoplay muted></video>
+          <h3>best flower sellers</h3>
+        </div>
+
+        <div class="content">
+          <h3>why choose us?</h3>
+          <p>
+            Choose us for the perfect floral experience. With our extensive
+            selection, exceptional quality, personalized service, and reliable
+            delivery, we bring the beauty of nature to your fingertips. Trust us
+            to create unforgettable moments with our exquisite blooms, crafted
+            with passion and delivered with care
+          </p>
+          <a href="about.html" class="btn"> learn more </a>
+        </div>
+      </div>
+    </section>
+    <!--about section ends-->
+    <!--icons section start-->
+    <section class="icons-container">
+      <div class="icons">
+        <img src="delivery.png" alt="" />
+        <div class="info">
+          <h3>free delivery</h3>
+          <span>on all orders</span>
+        </div>
+      </div>
+      <div class="icons">
+        <img src="money.png" alt="" />
+        <div class="info">
+          <h3>10 days returns</h3>
+          <span>moneyback guarantee</span>
+        </div>
+      </div>
+      <div class="icons">
+        <img src="gift.png" alt="" />
+        <div class="info">
+          <h3>offer and gifts</h3>
+          <span>on all orders</span>
+        </div>
+      </div>
+      <div class="icons">
+        <img src="payment.png" alt="" />
+        <div class="info">
+          <h3>secure payments</h3>
+          <span>protected by paypal</span>
+        </div>
+      </div>
+    </section>
+    <!--icons section ends-->
+    <!--products section starts-->
+    <section class="products" id="products">
+      <h1 class="heading">latest<span>products</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <span class="discount">-10%</span>
+          <div class="image">
+            <img src="fpot66.avif" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="another_webpage.html" class="cart-btn" id="addToCartBtn"
+                >add to cart</a
+              >
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flower pot</h3>
+            <div class="price">$12.99 <span>$15.99</span></div>
+          </div>
+        </div>
+        <script>
+          // JavaScript to handle the "Add to Cart" button click event
+          document
+            .getElementById("addToCartBtn")
+            .addEventListener("click", function () {
+              // Assuming you want to open a new webpage on "Add to Cart"
+              window.location.href = "another_webpage.html";
+            });
+        </script>
+
+        <div class="box">
+          <span class="discount">-10%</span>
+          <div class="image">
+            <img src="fpot77.jpg" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="another_webpage.html" class="cart-btn">add to cart</a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flower pot</h3>
+            <div class="price">$12.99 <span>$15.99</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="discount">-10%</span>
+          <div class="image">
+            <img src="fpot88.avif" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="cart-btn">add to cart</a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flower pot</h3>
+            <div class="price">$12.99 <span>$15.99</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="discount">-10%</span>
+          <div class="image">
+            <img src="fpot33.avif" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="cart-btn">add to cart</a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flower pot</h3>
+            <div class="price">$12.99 <span>$15.99</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="discount">-10%</span>
+          <div class="image">
+            <img src="fpot44.jpg" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="cart-btn">add to cart</a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flower pot</h3>
+            <div class="price">$12.99 <span>$15.99</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="discount">-10%</span>
+          <div class="image">
+            <img src="fpot99.avif" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="cart-btn">add to cart</a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flower pot</h3>
+            <div class="price">$12.99 <span>$15.99</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="discount">-10%</span>
+          <div class="image">
+            <img src="fpot2.avif" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="cart-btn">add to cart</a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flower pot</h3>
+            <div class="price">$12.99 <span>$15.99</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="discount">-10%</span>
+          <div class="image">
+            <img src="fpot1.avif" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="cart-btn">add to cart</a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flower pot</h3>
+            <div class="price">$12.99 <span>$15.99</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="discount">-10%</span>
+          <div class="image">
+            <img src="fpot.avif" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="cart-btn">add to cart</a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>flower pot</h3>
+            <div class="price">$12.99 <span>$15.99</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--products section ends-->
+    <!--reviews starts-->
+    <section class="review" id="review">
+      <h1 class="heading">customer reviews</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            Placing my order was a breeze, thanks to the intuitive layout and
+            user-friendly features. The site provided detailed descriptions of
+            each bloom, allowing me to make informed choices.The delivery
+            experience was equally remarkable. The attention to detail was
+            evident as I unwrapped the package, unveiling a breathtaking display
+            of nature's artistry.
+          </p>
+          <div class="user">
+            <img src="rap.jpg" alt="" />
+            <div class="user-info">
+              <h3>RAPUNZEL</h3>
+              <span>happy customer</span>
+            </div>
+          </div>
+          <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            Hey there, fellow web-slingers and flower enthusiasts! Your friendly
+            neighborhood Spider-Man here, and I just had to swing by and share
+            my exhilarating experience with this fantastic floral website.
+            Believe me when I say, it's a web-shooting experience like no other!
+            First things first, the user interface on this site is super sleek
+            and user-friendly. From elegant roses to vibrant sunflowers, they
+            had it all!
+          </p>
+          <div class="user">
+            <img src="spidey.jpg" alt="" />
+            <div class="user-info">
+              <h3>SPIDERMAN</h3>
+              <span>happy customer</span>
+            </div>
+          </div>
+          <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            Greetings, floral enthusiasts! Allow me to share my recent
+            delightful experience with this enchanting online flower emporium.
+            As a passionate admirer of nature's beauty, I stumbled upon this
+            website and found it to be an absolute treasure trove of floral
+            wonders.Whether you're seeking a bouquet for a special occasion or
+            simply looking to brighten someone's day, this site has you covered.
+          </p>
+          <div class="user">
+            <img src="anya.jpg" alt="" />
+            <div class="user-info">
+              <h3>ANYA</h3>
+              <span>happy customer</span>
+            </div>
+          </div>
+          <span class="fas fa-quote-right"></span>
+        </div>
+      </div>
+    </section>
+    <!--reviews ends-->
+    <!--contacts section starts here-->
+    <section class="contact" id="contact">
+      <h1 class="heading"><span> contact</span></h1>
+      <div class="row">
+        <form action="">
+          <input type="text" placeholder="name" class="box" />
+          <input type="email" placeholder="email" class="box" />
+          <input type="number" placeholder="number" class="box" />
+          <textarea
+            name=""
+            class="box"
+            placeholder="message"
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" value="send message" class="btn" />
+        </form>
+        <div class="image">
+          <img src="contact.avif" alt="" />
+        </div>
+      </div>
+    </section>
+    <!--contacts section starts here-->
+    <!--footer section starts-->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#">home</a>
+          <a href="#">about</a>
+          <a href="#">products</a>
+          <a href="#">review</a>
+          <a href="#">contact</a>
+        </div>
+
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">India</a>
+          <a href="#">Japan</a>
+          <a href="#">France</a>
+          <a href="#">USA</a>
+          <a href="#">South korea</a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#">+123-859-5976</a>
+          <a href="#">flowers@gmail.com</a>
+          <a href="#">Banglore, India -560062</a>
+          <img src="credit1.png" alt="" />
+        </div>
+      </div>
+      <div class="credit">
+        created by <span>techbytes</span> |all rights reserved
+      </div>
+    </section>
+    <!--footer section ends-->
+
+    <!--script file
+
+  -->
+    <script>
+
+      document.addEventListener("DOMContentLoaded", function () {
+          const addToCartButtons = document.querySelectorAll(".addToCartBtn");
+
+          addToCartButtons.forEach(btn => {
+            btn.addEventListener("click", function () {
+              const productId = btn.getAttribute("data-product-id");
+              const selectedProduct = products.find(product => product.id.toString() === productId);
+
+              // Add the selected product to the cart
+              addToCart(selectedProduct);
+
+              // Send a message to the second website
+              window.postMessage({ type: "cart-update", data: cart }, "*");
+            });
+          });
+
+            document.addEventListener("DOMContentLoaded", function () {
+              const addToCartButtons = document.querySelectorAll(".addToCartBtn");
+
+              addToCartButtons.forEach((btn) => {
+                btn.addEventListener("click", function () {
+                  const productId = btn.getAttribute("data-product-id");
+                  const selectedProduct = products.find(
+                    (product) => product.id.toString() === productId
+                  );
+
+                  // Add the selected product to the cart
+                  addToCart(selectedProduct);
+
+                  // Send the cart data to the server
+                  sendCartDataToServer(cart);
+                });
+              });
+
+              // Function to add an item to the cart
+              function addToCart(product) {
+                cart.push(product);
+                updateCartUI();
+              }
+
+              // Function to update the cart UI
+              function updateCartUI() {
+                // Update the cart items in the UI (you can render it however you like)
+                const cartItemsElement = document.getElementById("cart-items");
+                cartItemsElement.innerHTML = "";
+                cart.forEach((item) => {
+                  const listItem = document.createElement("li");
+                  listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+                  cartItemsElement.appendChild(listItem);
+                });
+              }
+
+              // Function to send cart data to the server
+              function sendCartDataToServer(cartData) {
+                // In a real-world scenario, you would use an HTTP request to send data to the server
+                // This is a simplified example using localStorage for demonstration purposes
+                localStorage.setItem("cart", JSON.stringify(cartData));
+              }
+
+              // Dummy product data
+              const products = [
+                { id: 1, name: "Product 1", price: 19.99 },
+                { id: 2, name: "Product 2", price: 29.99 },
+                { id: 3, name: "Product 3", price: 39.99 },
+              ];
+
+              // Load the existing cart data from the server (localStorage in this case)
+              const cartDataFromServer = localStorage.getItem("cart");
+              const cart = cartDataFromServer ? JSON.parse(cartDataFromServer) : [];
+              updateCartUI();
+            });
+    </script>
+  </body>
+</html>
